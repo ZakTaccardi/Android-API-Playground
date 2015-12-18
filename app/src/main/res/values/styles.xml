@@ -15,11 +15,14 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorIcons">@color/colorIconsWhite</item>
+        <item name="colorIconsAlpha">@integer/colorIconsAlpha_100</item>
+    </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="AppTheme.FabOverlay" parent="ThemeOverlay.AppCompat.Dark" >
+    <style name="AppTheme.FabOverlay" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorIcons">@color/colorIconsWhite</item>
         <item name="colorIconsAlpha">@integer/colorIconsAlpha_100</item>
 

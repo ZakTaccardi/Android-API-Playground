@@ -14,7 +14,6 @@
 
 
         <Button
-            android:id="@+id/mainview_transition_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="launchTransitionApiView"
@@ -22,12 +21,18 @@
             android:theme="@style/AppTheme.ButtonThemeOverlay" />
 
         <Button
-            android:id="@+id/mainview_animated_vector_drawables_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="launchAnimatedVectorDrawableView"
             android:text="@string/mainview_animated_vector_drawables_text"
             android:theme="@style/AppTheme.ButtonThemeOverlay" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchStateListAnimatorView"
+            android:text="@string/title_activity_state_list_animator"
+            android:theme="@style/AppTheme.ButtonThemeOverlay" />
+
     </LinearLayout>
 </ScrollView>
 

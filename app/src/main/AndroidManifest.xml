@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.taccardi.android_api_playground.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -17,17 +17,35 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taccardi.android_api_playground.MainActivity" />
         </activity>
         <activity
-            android:name="com.taccardi.android_api_playground.TransitionApiActivity"
+            android:name=".TransitionApiActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taccardi.android_api_playground.MainActivity" />
+        </activity>
         <activity
-            android:name="com.taccardi.android_api_playground.AnimatedVectorDrawableActivity"
+            android:name=".AnimatedVectorDrawableActivity"
             android:label="@string/title_activity_animated_vector_drawable"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taccardi.android_api_playground.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StateListAnimatorActivity"
+            android:label="@string/title_activity_state_list_animator"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taccardi.android_api_playground.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

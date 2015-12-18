@@ -6,4 +6,5 @@
     <color name="painting_card_background">@android:color/white</color>
     <color name="colorIcons">#000</color>
     <color name="colorIconsWhite">#FFF</color>
+    <color name="defaultCardColor">#999</color>
 </resources>

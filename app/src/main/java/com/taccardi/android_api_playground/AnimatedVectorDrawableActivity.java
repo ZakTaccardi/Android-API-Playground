@@ -3,6 +3,7 @@ package com.taccardi.android_api_playground;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -36,6 +37,13 @@ public class AnimatedVectorDrawableActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.avdview_toolbar_title);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_24dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavUtils.navigateUpFromSameTask(AnimatedVectorDrawableActivity.this);
+            }
+        });
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fabCheckToCross = (AnimatedVectorDrawable) fab.getContext().getDrawable(R.drawable.avd_check_to_cross);

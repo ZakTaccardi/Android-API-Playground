@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statelistanimatorview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.taccardi.android_api_playground.StateListAnimatorActivity"
+    tools:showIn="@layout/activity_state_list_animator">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/statelistanimatorview_box"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:stateListAnimator="@animator/raise"
+        app:cardBackgroundColor="@color/defaultCardColor"
+        app:cardCornerRadius="4dp"
+        tools:stateListAnimator="@null"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/statelistanimator_box_press_me_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/colorIconsWhite"
+            android:fontFamily="sans-serif-thin"
+            />
+        </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/statelistanimatorview_reveal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRevealButtonClick"
+        android:text="@string/statelistanimator_reveal_button_text"
+        android:theme="@style/AppTheme.ButtonThemeOverlay" />
+
+</LinearLayout>

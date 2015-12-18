@@ -29,5 +29,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, AnimatedVectorDrawableActivity.class));
     }
 
+    public void launchStateListAnimatorView(View view) {
+        startActivity(new Intent(this, StateListAnimatorActivity.class));
+    }
+
+
+
 
 }
