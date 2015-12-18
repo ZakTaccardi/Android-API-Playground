@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/accelerate_decelerate">
+    <changeBounds android:duration="250">
+        <targets>
+            <target android:targetId="@id/painting_image" />
+        </targets>
+    </changeBounds>
+    <changeBounds android:duration="250">
+        <targets>
+            <target android:targetId="@id/painting_title" />
+            <target android:targetId="@id/painting_description_background" />
+            <target android:targetId="@id/painting_subtitle" />
+        </targets>
+    </changeBounds>
+    <fade
+        android:duration="250"
+        android:startDelay="300">
+        <targets>
+            <target android:targetId="@id/painting_info_button" />
+        </targets>
+    </fade>
+    <slide
+        android:duration="450"
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:startDelay="0">
+        <targets>
+            <target android:targetId="@id/painting_text_container" />
+        </targets>
+    </slide>
+</transitionSet>

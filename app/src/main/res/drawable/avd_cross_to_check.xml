@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_cross">
+    <target
+        android:name="@string/cross_name"
+        android:animation="@animator/cross_to_check" />
+</animated-vector>

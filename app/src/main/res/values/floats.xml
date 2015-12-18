@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="colorIconsAlpha_54" format="float" type="integer">.54</item>
+    <item name="colorIconsAlpha_100" format="float" type="integer">1</item>
+</resources>

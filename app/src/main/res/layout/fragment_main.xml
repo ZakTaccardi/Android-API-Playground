@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/painting_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    tools:context="com.taccardi.android_api_playground.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/painting_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/painting" />
+
+    <View
+        android:id="@+id/painting_description_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/painting_title"
+        android:background="@color/painting_card_background" />
+
+    <TextView
+        android:id="@+id/painting_title"
+        style="@style/painting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/painting_subtitle"
+        android:text="@string/painting_title" />
+
+    <TextView
+        android:id="@+id/painting_subtitle"
+        style="@style/painting_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/painting_author" />
+
+    <ImageView
+        android:id="@+id/painting_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/painting_title"
+        android:onClick="changeScenes"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_info_black_24dp" />
+</RelativeLayout>
