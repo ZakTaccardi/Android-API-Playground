@@ -34,4 +34,7 @@
     <string name="statelistanimator_reveal_button_text">reveal</string>
     <string name="statelistanimator_reset_button_text">hide</string>
     <string name="statelistanimator_box_press_me_text">Press me</string>
+    <string name="id_detail">\@+id/detail</string>
+    <string name="id_keyboard">\@+id/detail</string>
+    <string name="title_activity_adaptive_transitions">Adaptive Transitions</string>
 </resources>

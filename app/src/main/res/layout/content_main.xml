@@ -32,6 +32,13 @@
             android:onClick="launchStateListAnimatorView"
             android:text="@string/title_activity_state_list_animator"
             android:theme="@style/AppTheme.ButtonThemeOverlay" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchAdaptiveTransitionsView"
+            android:text="@string/title_activity_adaptive_transitions"
+            android:theme="@style/AppTheme.ButtonThemeOverlay" />
+
 
     </LinearLayout>
 </ScrollView>

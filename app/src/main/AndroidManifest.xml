@@ -17,6 +17,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.taccardi.android_api_playground.MainActivity" />
@@ -46,6 +47,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.taccardi.android_api_playground.MainActivity" />
         </activity>
+        <activity android:name=".AdaptiveTransitionsActivity"></activity>
     </application>
 
 </manifest>

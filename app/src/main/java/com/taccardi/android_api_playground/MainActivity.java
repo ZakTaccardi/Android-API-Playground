@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
+    public void launchAdaptiveTransitionsView(View view) {
+        startActivity(new Intent(this, AdaptiveTransitionsActivity.class));
+    }
 }
